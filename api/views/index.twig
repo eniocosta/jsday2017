@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cidadeMassa</title>
+	
+	<link rel="stylesheet" href="{{ app.domain }}/assets/css/style.css">
+
+</head>
+
+<body>	
+	{% for tema in temas %}
+		<strong>{{ tema.tem_nome}}:</strong><br><hr>
+		{% for sugestao in tema.sugestoes %}
+			{{ sugestao.sug_titulo }}<br>
+			{{ sugestao.sug_descricao|raw }}<br>
+		{% endfor %}<br><br>
+	{% endfor %}
+	<script src="{{ app.domain }}/assets/js/js.js"></script>
+</body>
+</html>

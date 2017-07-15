@@ -1,0 +1,16 @@
+{
+    "require": {
+        "phroute/phroute": "^2.1",
+        "illuminate/database": "^5.4",
+        "twig/twig": "^1.33"
+    },
+    "autoload": {
+
+    	"psr-4": {
+    		"Controller\\": "controllers",
+    		"Model\\": "models",
+    		"emc\\": ""
+    	}
+
+    }
+}
